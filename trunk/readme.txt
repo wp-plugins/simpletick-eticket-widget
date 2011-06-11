@@ -4,7 +4,7 @@ Donate link: http://simpletick.com/
 Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout
 Requires at least: 2.8
 Tested up to: 3.1.3
-Stable tag: 1.0.1
+Stable tag: 1.0
 
 You can use the plugin to display events & sell tickets on any page of your blog. 
 
