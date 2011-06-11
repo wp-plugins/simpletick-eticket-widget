@@ -2,8 +2,9 @@
 Contributors: simpletick (this should be a list of wordpress.org userid's)
 Donate link: http://simpletick.com/
 Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout
-Requires at least: 2.0.2
-Tested up to: 2.1
+Requires at least: 2.8
+Tested up to: 3.1.3
+Stable tag: 1.0.1
 
 Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
 
@@ -32,6 +33,10 @@ Go to SimpleTick.com
 
 *First* sign up for accounts on Paypal.com or Google.com, then update your SimpleTick site. The buttons will automatically appear.
 
+= Does this support Pay at the Door or Pay by Invoice =
+
+Yes, the end-user can select the checkout link on the shopping cart page. They will be redirected to your normal checkout page where they can choose Pay at the Door or Pay by Invoice 
+
 == Screenshots ==
 
 1. sample1.png
@@ -39,6 +44,9 @@ Go to SimpleTick.com
 2. sample3.png
 2. sample4.png
 2. sample4.png
+
+== Upgrade Notice == 
+This is the first release
 
 == Changelog ==
 
