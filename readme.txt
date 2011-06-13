@@ -14,6 +14,7 @@ You can use the plugin to display events & sell tickets on any page of your blog
 If you have a SimpleTick site you can use the plugin to display events on any page of your blog. The event title, teaser text, and a thumbnail will appear.
 You events will automatically appear. People can click on the event to instantly view dates and times, then price groups, and finally *order tickets*.
 People can order tickets for *different* events. Both PayPal and Google Checkout are built in. If you use any other payment gateway customers can click the checkout button to use them.
+Here is a video overview: http://vimeo.com/25007596
 
 == Installation ==
 
