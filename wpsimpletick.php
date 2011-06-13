@@ -1,14 +1,14 @@
 <?php
 /**
  * @package WP_SIMPLETICK
- * @version 1.0.1
+ * @version 1.0.2
  */
 /*
 Plugin Name: SimpleTick eTicket Widget
-Plugin URI: http://www.SimpleTick.com/wordpress/
+Plugin URI: http://www.SimpleTick.com/wordpress.aspx
 Description: Display events and sell tickets directly from your blog.
 Author: Aron Kansal
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://www.SimpleTick.com/
 */
 

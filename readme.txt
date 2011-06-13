@@ -4,7 +4,7 @@ Donate link: http://simpletick.com/
 Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout, comedy tickets, discount tickets, theater tickets, discount theater tickets, stand up tickets, standup tickets, discount tickets, cinema tickets, sporting tickets, sport tickets, footbal tickets, improv tickets, event reg, improvisation tickets, live comedy tickets, sketch tickets, dance tickets, club tickets, online event registration, event management, event planning, ticket shop, ticket sales, event website, conferences, seminars, concerts, festivals, workshops
 Requires at least: 2.8
 Tested up to: 3.1.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 You can use the plugin to display events & sell tickets on any page of your blog. 
 
@@ -57,6 +57,9 @@ This is the first release
 
 = 1.0.1 =
 * Added screenshots and video link
+
+= 1.0.2 =
+* Added link to WordPress Info on SimpleTick.com
 
 
 `<?php code(); // goes in backticks ?>`
