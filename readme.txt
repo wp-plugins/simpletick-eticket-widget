@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: simpletick (this should be a list of wordpress.org userid's)
 Donate link: http://simpletick.com/
-Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout
+Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout, comedy tickets, discount tickets, theater tickets, discount theater tickets, stand up tickets, standup tickets, discount tickets, cinema tickets, sporting tickets, sport tickets, footbal tickets, improv tickets, event reg, improvisation tickets, live comedy tickets, sketch tickets, dance tickets, club tickets, online event registration, event management, event planning, ticket shop, ticket sales, event website, conferences, seminars, concerts, festivals, workshops
 Requires at least: 2.8
 Tested up to: 3.1.3
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 You can use the plugin to display events & sell tickets on any page of your blog. 
 
@@ -41,11 +41,11 @@ Yes, the end-user can select the checkout link on the shopping cart page. They w
 
 == Screenshots ==
 
-1. sample1.png
-2. sample2.png
-2. sample3.png
-2. sample4.png
-2. sample4.png
+1. Here is the event listings widget in a page with sliding panels.
+2. Here is the event listings widget on a basic blog page.
+2. The widget will display events date/times for each event.
+2. You can have unlimted price groups. People then can select how many tickets they would like.
+2. People can then checkout with either PayPal or Google Checkout.
 
 == Upgrade Notice == 
 This is the first release
@@ -54,6 +54,9 @@ This is the first release
 
 = 1.0 =
 * First release
+
+= 1.0.1 =
+* Added screenshots and video link
 
 
 `<?php code(); // goes in backticks ?>`
