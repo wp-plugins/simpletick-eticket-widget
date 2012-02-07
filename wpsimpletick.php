@@ -4,12 +4,12 @@
  * @version 1.0.2
  */
 /*
-Plugin Name: SimpleTick eTicket Widget
-Plugin URI: http://www.SimpleTick.com/wordpress.aspx
+Plugin Name: SimpleTix eTicket Widget
+Plugin URI: http://www.SimpleTix.com/wordpress.aspx
 Description: Display events and sell tickets directly from your blog.
 Author: Aron Kansal
 Version: 1.0.2
-Author URI: http://www.SimpleTick.com/
+Author URI: http://www.SimpleTix.com/
 */
 
 
@@ -69,7 +69,7 @@ function wp_simpletick_my_init()
 
 function wp_simpletick_plugin_menu() 
 {
-	add_options_page('SimpleTick Widget Settings', 'SimpleTick Widget', 'manage_options', 'm-simpletick-widget', 'wp_simpletick_add_options');
+	add_options_page('SimpleTix Widget Settings', 'SimpleTix Widget', 'manage_options', 'm-simpletick-widget', 'wp_simpletick_add_options');
 }
 
 function wp_simpletick_add_options() 
@@ -80,8 +80,8 @@ function wp_simpletick_add_options()
 		$str_msg='Widget settings were saved';
 	}
 	echo '<form method=post><div id="wpbody-content" style="width:620px;">';
-	echo '<div class="wrap"><h2>SimpleTick Widget Settings</h2></div>';
-	echo '<div class="wrap"><p>You must have a SimpleTick powered site to use this plug-in. <a href="http://www.simpletick.com/" target="_blank">Click here</a> to create a new SimpleTick site now.</p></div>';
+	echo '<div class="wrap"><h2>SimpleTix Widget Settings</h2></div>';
+	echo '<div class="wrap"><p>You must have a SimpleTix powered site to use this plug-in. <a href="http://www.SimpleTix.com/" target="_blank">Click here</a> to create a new SimpleTix site now.</p></div>';
 	echo '<div class="wrap" style="margin-top:30px;"><h3>Copy and Paste Your Widget Code Below</h3></div>';
 	echo '<div class="wrap"><textarea style="width:600px; height:100px;" name="wp_simpletick_code">'.stripslashes(get_option('simpletick_code', '')).'</textarea></div>';
 	echo '<div class="wrap" style="text-align:right; margin-top:10px;"><span style="float:left;">'.$str_msg.'</span><input type=submit value="Save"></div>';
@@ -91,7 +91,7 @@ function wp_simpletick_add_options()
 function wp_simpletick_add_box() 
 {
 	global $meta_box;
-	add_meta_box('wp_simpletick_metabox', 'SimpleTick Widget', 'wp_simpletick_show_box', 'post', 'normal', 'high');
+	add_meta_box('wp_simpletick_metabox', 'SimpleTix Widget', 'wp_simpletick_show_box', 'post', 'normal', 'high');
 }
 
 function wp_simpletick_thecontent($content) 
@@ -152,7 +152,7 @@ function wp_simpletick_show_box()
 	$checked_state=get_post_meta ($post->ID, '_simpletick_show', true); 
 	if ($checked_state==1){$checked_state='checked';}else{$checked_state='';}
 
-	echo "<p><input type=checkbox $checked_state onchange='select_wp_simpletick()' name='simpletick_chk' id='wp_simpletick_chk' value='1'> Display the SimpleTick Ticketing Widget on this Page</p>";
+	echo "<p><input type=checkbox $checked_state onchange='select_wp_simpletick()' name='simpletick_chk' id='wp_simpletick_chk' value='1'> Display the SimpleTix Ticketing Widget on this Page</p>";
 
 
 	$checked_state=get_post_meta ($post->ID, '_simpletick_show_pos', true); 
