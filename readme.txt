@@ -4,7 +4,7 @@ Donate link: http://SimpleTix.com/
 Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout, comedy tickets, discount tickets, theater tickets, discount theater tickets, stand up tickets, standup tickets, discount tickets, cinema tickets, sporting tickets, sport tickets, footbal tickets, improv tickets, event reg, improvisation tickets, live comedy tickets, sketch tickets, dance tickets, club tickets, online event registration, event management, event planning, ticket shop, ticket sales, event website, conferences, seminars, concerts, festivals, workshops
 Requires at least: 2.8
 Tested up to: 3.1.3
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 
 You can use the plugin to display events & sell tickets on any page of your blog. 
 
