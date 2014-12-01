@@ -1,65 +1,81 @@
 === Plugin Name ===
-Contributors: simpletick (this should be a list of wordpress.org userid's)
-Donate link: http://SimpleTix.com/
-Tags: etickets, ticket, tickets, ticketing, event, festivals, event registration, paypal, google checkout, comedy tickets, discount tickets, theater tickets, discount theater tickets, stand up tickets, standup tickets, discount tickets, cinema tickets, sporting tickets, sport tickets, footbal tickets, improv tickets, event reg, improvisation tickets, live comedy tickets, sketch tickets, dance tickets, club tickets, online event registration, event management, event planning, ticket shop, ticket sales, event website, conferences, seminars, concerts, festivals, workshops, SimpleTix
-Requires at least: 2.8
-Tested up to: 3.1.3
-Stable tag: 1.0.4
+Contributors: simpletick
+Donate link: http://simpletix.com/
+Tags: tickets, registration, ticketing, events, festival, ticket, ticketing, conference, theater, meeting, etickets, e-tickets, event registration, event reg
+Requires at least: 3.0.1
+Tested up to: 4.0
+Stable tag: 1.5.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-You can use the plugin to display events & sell tickets on any page of your blog. 
 
+== Upgrade Notice ==
+
+Added screenshots
 
 == Description ==
 
-If you have a SimpleTix site you can use the plugin to display events on any page of your blog. The event title, teaser text, and a thumbnail will appear.
-You events will automatically appear. People can click on the event to instantly view dates and times, then price groups, and finally *order tickets*.
-People can order tickets for *different* events. Both PayPal and Google Checkout are built in. If you use any other payment gateway customers can click the checkout button to use them.
-Here is a video overview: http://bit.ly/LTJCwx
+This plugin instantly allows you to post your event on [SimpleTix](http://SimpleTix.com/) , then add a button on WordPress site to buy tickets. This plugin allows you to add a sharp looking "Buy Tickets" or "Register Now" button on an blog or page in your WordPress site. 
+
+**Highlights include:**
+
+* **Free for free events.**  SimpleTix is free for free events and there's no monthly fee. 
+* **Customers won't leave your site.**  Your customers can then register for the event directly on your WordPress site. They can even pay via credit card or with PayPal.
+* **General Admission.**  Sell tickets for your live events like theatre, conferences, and festivals.
+* **Sell Flex Passes.**  Sell tickets for tours, ice skating, or any other activity that does not have a specific date/time. 
+* **Mobile Tickets.**  Customers can have the tickets sent right to their mobile phones via Text/SMS message.
 
 == Installation ==
 
-1. Upload `wpsimpletick.php` to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
+This section describes how to install the SimpleTix plugin and get it working.
+
+1. Activate the plugin through the 'Plugins' menu in WordPress
+2. Enter in your SimpleTix domain or click create account
 
 == Frequently Asked Questions ==
 
-= Will private events be listed? =
+= Do you need an existing SimpleTix account? =
 
-*No*, private or password protected events will *not appear*.
+No, you can sign up for a free account from inside WordPress. It takes just 30 seconds.
 
-= How do you sign up for a SimpleTix account? =
+= Is this free? =
 
-Go to SimpleTix.com
+SimpleTix is Free for Free events. For paid events we charge a small flat-rate per ticket fee. See SimpleTix.com for pricing.
 
-= How do I enable Paypal or Google Checkout =
+= Are there any limits? =
+There are no limits. You can unlimited different events, event times, and price groups.
 
-*First* sign up for accounts on Paypal.com or Google.com, then update your SimpleTix site. The buttons will automatically appear.
+= How long has SimpleTix been around? =
+SimpleTix started in 2009 to bring an enterprise-grade ticketing solution to venues and event promoters around the world. To date over 750,000 tickets have been sold on the SimpleTix platform in 40 countries.
 
-= Does this support Pay at the Door or Pay by Invoice =
-
-Yes, the end-user can select the checkout link on the shopping cart page. They will be redirected to your normal checkout page where they can choose Pay at the Door or Pay by Invoice 
 
 == Screenshots ==
 
-1. Here is the event listings widget in a page with sliding panels.
-2. Here is the event listings widget on a basic blog page.
-2. The widget will display events date/times for each event.
-2. You can have unlimted price groups. People then can select how many tickets they would like.
-2. People can then checkout with either PayPal or Google Checkout.
-
-== Upgrade Notice == 
-This is the first release
+1. This is how the button would appear on your WordPress site to sell ticket to a festival.
+2. This is how the button would appear on your WordPress site to ask people to register for a party.
+3. This is how the button would appear on your WordPress site to ask people to register for a workshop or meeting.
+4. The ticket ordering page.
+5. The shopping cart page and payment option page.
+6. The checkout page.
 
 == Changelog ==
 
 = 1.0 =
-* First release
+* Our first release of this new WordPress app
 
-= 1.0.1 =
-* Added screenshots and video link
-
-= 1.0.2 =
-* Added link to WordPress Info on SimpleTix.com
+== How it works? ==
 
 
-`<?php code(); // goes in backticks ?>`
+1. You will either connect to your existing SimpleTix site or create a new event on a new site
+2. Then in your WordPress site go the edit or compose screen for the either a blog post or CMS page
+3. Click the Add SimpleTix button, then select the event you would like to like the SimpleTix button to go to
+4. Then select if you would like you would like them to go to an overview of the event plus a list of all the times or select a specific time
+5. Decide if you would like to use a image button or a text link
+6. If you choose image button select from our existing ticket or register buttons, or upload your own
+7. Then click insert. This will insert the SimpleTix short code to your page.
+
+= SimpleTix takes care of: =
+
+* Ticket inventory
+* Order checkout and linking to your payment gateway, like Stripe
+* Sending the eTickets and receipts
