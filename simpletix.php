@@ -39,7 +39,11 @@ class SimpleTix{
 		add_action( 'admin_footer-index.php',    array(&$this,'simpletix_popupscript' ) );		
 		add_action( 'wp_ajax_my_action', array(&$this,'my_action_callback' ) );		
 		add_action( 'wp_ajax_custom_uploadify', array(&$this,'custom_uploadify_callback' ) );		
-		add_action( 'wp_ajax_simpletix_buttons', array(&$this,'simpletix_buttons_callback' ) );						
+		add_action( 'wp_ajax_simpletix_buttons', array(&$this,'simpletix_buttons_callback' ) );	
+		
+		//Add the actions for domain auto complete search.
+		add_action( 'wp_ajax_simpletix_domain_search', array($this, 'simpletix_domain_search') );
+		add_action( 'wp_ajax_nopriv_simpletix_domain_search', array($this,'simpletix_domain_search') );					
 	}
 	
 	function register_simpletix_menu()
@@ -244,6 +248,19 @@ class SimpleTix{
 		wp_deregister_script( 'jquery' ); // deregisters the default WordPress jQuery  
 		wp_register_script('jquery', ("http://code.jquery.com/jquery-1.11.1.min.js"), false);
 		wp_enqueue_script('jquery');
+		
+		/**
+		 * domain search with autocomplete
+		 */
+		wp_enqueue_script( 'jquery-ui-autocomplete' );
+		wp_register_style( 'jquery-ui-styles','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' );
+		wp_enqueue_style( 'jquery-ui-styles' );
+		wp_register_script( 'domain-autocomplete', plugins_url( 'simpletick-eticket-widget/js/domain-autocomplete.js'), array( 'jquery'), '1.0', false );
+		wp_localize_script( 'domain-autocomplete', 'DomainAutocomplete', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
+		wp_enqueue_script( 'domain-autocomplete' );
+		/**
+		 * End of domain search with autocomplete
+		 */
 		
 		wp_register_script( 'simpletix_colorbox', plugins_url( 'simpletick-eticket-widget/js/colorbox.js' ) );
 		wp_enqueue_script( 'simpletix_colorbox' );
@@ -911,6 +928,17 @@ class SimpleTix{
 		delete_option('simpletix_sslurl');
 		delete_option('simpletix_store_name');				
 	}		
+
+/**
+ * Searches domain for Auto Complete as per user input on the search box.
+ */
+	public function simpletix_domain_search(){
+		$term = strtolower( $_GET['term'] );
+		$domain_search_result=file_get_contents("http://developerapi.simpletix.com/api/v1/sites/SearchDomain?searchString={$term}");
+		echo $domain_search_result;
+		exit;
+	}
+
 }
 
 //	Make object of Class
