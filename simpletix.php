@@ -246,14 +246,14 @@ class SimpleTix{
 	function simpletix_admin_scripts( )
 	{			
 		wp_deregister_script( 'jquery' ); // deregisters the default WordPress jQuery  
-		wp_register_script('jquery', ("http://code.jquery.com/jquery-1.11.1.min.js"), false);
+		wp_register_script('jquery', ("https://code.jquery.com/jquery-1.11.1.min.js"), false);
 		wp_enqueue_script('jquery');
 		
 		/**
 		 * domain search with autocomplete
 		 */
 		wp_enqueue_script( 'jquery-ui-autocomplete' );
-		wp_register_style( 'jquery-ui-styles','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' );
+		wp_register_style( 'jquery-ui-styles','https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css' );
 		wp_enqueue_style( 'jquery-ui-styles' );
 		wp_register_script( 'domain-autocomplete', plugins_url( 'simpletick-eticket-widget/js/domain-autocomplete.js'), array( 'jquery'), '1.0', false );
 		wp_localize_script( 'domain-autocomplete', 'DomainAutocomplete', array( 'url' => admin_url( 'admin-ajax.php' ) ) );
